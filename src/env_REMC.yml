@@ -1,0 +1,15 @@
+name: env_REMC
+channels:
+  - defaults
+  - anaconda
+dependencies:
+python=3.10
+argparse
+random
+time
+tqdm
+copy
+math
+matplotlib.pyplot
+numpy
+multiprocessing
