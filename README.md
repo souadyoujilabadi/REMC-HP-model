@@ -23,7 +23,7 @@ cd REMC-HP-model
 - Create the `env_REMC` conda environment:
   
 ```bash
-conda env create -f env.yml
+conda env create -f env_REMC.yml
 ```
 
 - Load the `env_REMC` conda environment:
