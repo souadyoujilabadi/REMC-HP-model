@@ -56,7 +56,7 @@ python3 REMC_parallel.py -fasta test.fasta.txt
 The available command-line arguments are:
 
 |Parameter      | Description                                                              | Default value |
-|_______________|__________________________________________________________________________|_______________|
+|---------------|--------------------------------------------------------------------------|---------------|
 |-fasta         | The path to the protein sequence FASTA file.                             |               |
 |-numLocalSteps | The number of local steps in a Monte Carlo search.                       | 500           |
 |-Tmin          | The minimum temperature value.                                           | 160.0         |
