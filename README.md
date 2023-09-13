@@ -43,25 +43,29 @@ python3 REMC.py -fasta input.fasta
 python3 REMC_parallel.py -fasta input.fasta
 ```
 
+A sequence was generated to be equivalent to the sequence tested by Chris Thachuk et al. in the provided article (see README in the article's provided code), and used in order to compare the results of the REMC algorithm implemented in this project with the results of the REMC algorithm implemented by Chris Thachuk et al:
+
+```bash
+python3 REMC.py -fasta test.fasta.txt
+```
+
+```bash
+python3 REMC_parallel.py -fasta test.fasta.txt
+```
+
 The available command-line arguments are:
 
-```python
-from tabulate import tabulate
-
-# Define the input parameters as a list of lists
-input_params = [
-    ["Parameter", "Description", "Default value"],
-    ["-fasta", "The path to the protein sequence FASTA file.", ""],
-    ["-numLocalSteps", "The number of local steps in a Monte Carlo search.", "500"],
-    ["-Tmin", "The minimum temperature value.", "160.0"],
-    ["-Tmax", "The maximum temperature value.", "220.0"],
-    ["-numReps", "The number of replicas to simulate.", "5"],
-    ["-maxSteps", "The maximum number of steps.", "10"],
-    ["-is_random", "Whether to assign a random initial conformation (True) or linear (False)."],
-    ["-seed", "Seed for random number generation (results reproducibility).", "None"],
-    ["-pmWeight", "Weight to give pull moves vs. VSHD moves.", "0.4"]
-]
-```
+|Parameter      | Description                                                              | Default value |
+|_______________|__________________________________________________________________________|_______________|
+|-fasta         | The path to the protein sequence FASTA file.                             |               |
+|-numLocalSteps | The number of local steps in a Monte Carlo search.                       | 500           |
+|-Tmin          | The minimum temperature value.                                           | 160.0         |
+|-Tmax          | The maximum temperature value.                                           | 220.0         |
+|-numReps       | The number of replicas to simulate.                                      | 5             |
+|-maxSteps      | The maximum number of steps.                                             | 10            |
+|-is_random     | Whether to assign a random initial conformation (True) or linear (False).| True          |
+|-seed          | Seed for random number generation (results reproducibility).             | None          |
+|-pmWeight      | Weight to give pull moves vs. VSHD moves.                                | 0.4           |
 
 All the arguments have default values and are optional, except for the fasta file.
 
