@@ -34,7 +34,7 @@ def parse_arguments():
     parser.add_argument("-Tmin", type=float, dest="Tmin", default=160.0, help="Minimum temperature value")
     parser.add_argument("-Tmax", type=float, dest="Tmax", default=220.0, help="Maximum temperature value")
     parser.add_argument("-numReps", type=int, dest="numReps", default=5, help="Number of replicas to simulate")
-    parser.add_argument("-maxSteps", type=int, dest="maxSteps", default=100, help="Maximum number of steps")
+    parser.add_argument("-maxSteps", type=int, dest="maxSteps", default=10, help="Maximum number of steps")
     parser.add_argument("-is_random", type=str_to_bool, dest="is_random", default=True, help="Whether to assign a random initial conformation (True) or linear (False)")
     parser.add_argument("-seed", type=int, dest="seed", default=None, help="Seed for random number generation")
     parser.add_argument("-pmWeight", type=float, dest="pmWeight", default=0.4, help="Weight to give pull moves vs. VSHD moves")
